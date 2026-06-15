@@ -1,122 +1,349 @@
-# 🌟 StellarAid
-Blockchain-powered crowdfunding for global impact — transparent, borderless, and secure.
-StellarAid is an open-source, decentralized crowdfunding platform built on the Stellar Network & Soroban smart contracts. It enables creators to raise funds in XLM or any Stellar-based asset, while donors enjoy transparent, verifiable on-chain contributions.
-Whether it’s humanitarian campaigns, community causes, startups, or global charity projects — StellarAid brings trust, transparency, and financial accessibility to fundraising.
+# 🌟 Lumora
 
-# 📖 About StellarAid
-StellarAid empowers individuals and organizations to launch fundraising campaigns with full blockchain transparency.
-The platform supports multi-asset contributions, verifiable donation trails, automated fund releases through Soroban smart contracts, and wallet-based authentication.
-- 🔐 Decentralized & Secure — Wallet-based login, non-custodial flows
-- 💸 Multi-Asset Support — XLM, USDC, NGNT, custom Stellar assets
-- 📊 Transparent — Every donation visible and verifiable on-chain
-- ⚙️ Modular & Open Source — Easy for contributors and developers
+**Lumora** is a Stellar-powered creative marketplace where artists, designers, and creative professionals showcase their work, connect with clients, receive secure payments, and build sustainable careers in the global digital economy.
+
+---
+
+# 📖 About Lumora
+
+Lumora empowers creators to monetize their talents through a decentralized ecosystem built on the Stellar network.
+
+Whether you're a graphic designer, illustrator, UI/UX designer, digital artist, photographer, animator, or creative agency, Lumora provides a trusted platform to showcase your portfolio, sell digital works, secure freelance opportunities, and receive payments instantly through Stellar.
+
+The platform combines the power of blockchain transparency, decentralized payments, and professional talent discovery into one unified ecosystem.
+
+## ✨ Core Features
+
+* 🎨 Portfolio Showcase — Build a professional creative portfolio
+* 💼 Client Marketplace — Connect with businesses and potential clients
+* 💸 Instant Payments — Receive payments through Stellar assets
+* 🔐 Decentralized & Secure — Wallet-based authentication and ownership
+* 📄 Commission Management — Custom work requests and project tracking
+* ⭐ Reputation System — Reviews, ratings, and verified work history
+* 📊 Transparent Transactions — Payment records verifiable on-chain
+* ⚙️ Open Source Ecosystem — Built for developers and community contributors
+
+---
 
 # 🏗 Organization Repositories
-- stellarAid-web → Frontend DApp (Next.js + Stellar SDK)
-  - Wallet connection (Freighter, Albedo, Lobstr)
-  - Campaign discovery & donation dashboard
-  - Creator dashboard for managing projects
-  - Admin UI for approvals and moderation
 
-- stellarAid-services → Backend services (NestJS + PostgreSQL )
-  - User authentication (wallet + email verification)
-  - Campaign approval workflow
-  - Donation tracking + analytics
-  - Notifications (email/SMS)
-  - Admin API endpoints
+## lumora-web
 
-- stellaraid-contracts → Soroban smart contracts (Rust)
-  - Secure donation escrow
-  - Creator withdrawal logic
-  - Platform fee management
-  - Dispute window & session lifecycle
-  - Multi-asset support
+Frontend Marketplace & Portfolio Platform
 
-- Each repo includes:
+### Features
+
+* Artist portfolio management
+* Creative marketplace
+* Design discovery & search
+* Client dashboards
+* Commission request system
+* Wallet integration
+* Messaging system
+* Artist hiring workflow
+
+### Tech Stack
+
+* Next.js
+* TypeScript
+* TailwindCSS
+* React Query
+* Zustand
+* Stellar Wallet SDK
+
+---
+
+## lumora-services
+
+Backend APIs & Core Services
+
+### Features
+
+* Authentication & authorization
+* User profile management
+* Portfolio management
+* Commission workflows
+* Marketplace services
+* Messaging services
+* Payment tracking
+* Notification system
+* Analytics & reporting
+
+### Tech Stack
+
+* NestJS
+* PostgreSQL
+* Redis
+* Prisma ORM
+* BullMQ
+* Nodemailer
+
+---
+
+## lumora-contracts
+
+Soroban Smart Contracts
+
+### Features
+
+* Escrow payments
+* Milestone-based releases
+* Artist payouts
+* Platform fee management
+* Commission agreements
+* Dispute handling
+* Multi-asset support
+
+### Tech Stack
+
+* Rust
+* Soroban SDK
+* Soroban CLI
+* Stellar RPC
+
+---
+
+## lumora-mobile
+
+Mobile Application
+
+### Features
+
+* Artist portfolio management
+* Client communication
+* Real-time notifications
+* Project tracking
+* Wallet integration
+* Secure payments
+
+### Tech Stack
+
+* React Native
+* Expo
+* Stellar SDK
+
+---
+
+## lumora-design-system
+
+Shared Design Components
+
+### Features
+
+* UI components
+* Design tokens
+* Brand assets
+* Typography standards
+* Accessibility guidelines
+
+---
+
+## Repository Structure
+
+Each repository includes:
+
+```text
+/docs
+/examples
+/scripts
+/tests
 ```
-/docs        → Technical documentation
-/examples    → Sample integrations
-/scripts     → Dev and deployment utilities
-```
 
-# 🔑 How StellarAid Works
-- 1️⃣ User connects Stellar wallet (Freighter, Albedo, Lobstr)
-- 2️⃣ Creator launches a campaign → stored in backend + contract ref
-- 3️⃣ Donors contribute using Stellar assets
-- 4️⃣ Soroban contract escrows funds safely
-- 5️⃣ Creators withdraw funds securely on-chain
-- 6️⃣ Admin tools handle verification, fraud detection & analytics
-Everything is transparent, globally accessible, and verifiable.
+---
+
+# 🔑 How Lumora Works
+
+## For Artists
+
+1. Create an account and connect your Stellar wallet
+2. Build your portfolio and showcase your work
+3. Publish services or list artwork for sale
+4. Receive commission requests from clients
+5. Complete projects and receive payments securely
+6. Build your reputation through reviews and ratings
+
+---
+
+## For Clients
+
+1. Discover talented artists and designers
+2. Browse portfolios and completed work
+3. Purchase existing artwork or design assets
+4. Request custom projects and commissions
+5. Pay securely using Stellar assets
+6. Collaborate and communicate directly with creators
+
+---
+
+## For Businesses
+
+1. Search for creative talent
+2. Post design opportunities
+3. Hire freelancers or agencies
+4. Manage projects and milestones
+5. Pay globally without banking barriers
+
+---
+
+# 🌐 Powered by Stellar
+
+Lumora leverages Stellar's fast, low-cost, and borderless payment infrastructure.
+
+Supported assets include:
+
+* XLM
+* USDC
+* NGNT
+* EURC
+* Custom Stellar Assets
+
+### Benefits
+
+* Near-instant settlements
+* Low transaction fees
+* Global accessibility
+* Transparent payment history
+* Secure wallet ownership
+
+---
 
 # 🛠 Tech Stack
-### 🌐 Frontend DApp
-- Next.js
-- Stellar Wallet SDK & Soroban Kit
-- TailwindCSS
-- React Query + Zustand
 
-### ⚙️ Backend Services
+## 🌐 Frontend
 
-- NestJS (modular monolith)
-- PostgreSQL (primary data store)
-- Redis (cache, rate-limits, nonce store)
-- Nodemailer (notifications)
+* Next.js
+* React
+* TypeScript
+* TailwindCSS
+* React Query
+* Zustand
+* Stellar Wallet SDK
 
-### 📝 Smart Contracts
-- Rust
-- Soroban SDK
-- Soroban RPC
+## ⚙️ Backend
 
-### 🗄 Data Layer
-- PostgreSQL for core data
-- Redis for caching + session flow
-- Optional IPFS for media (campaign images, proofs)
+* NestJS
+* PostgreSQL
+* Redis
+* Prisma ORM
+* BullMQ
+* Nodemailer
 
+## 📝 Smart Contracts
+
+* Rust
+* Soroban SDK
+* Soroban CLI
+* Stellar RPC
+
+## 🗄 Storage Layer
+
+* PostgreSQL
+* Redis
+* Object Storage (S3 Compatible)
+* Optional IPFS Support
+
+---
 
 # 🚀 Roadmap
-### Phase 1 (MVP)
 
-- User registration + wallet login
-- Create & approve campaigns
-- Donate using XLM/USDC
-- Basic dashboard & on-chain transparency
-- Core Soroban contract (escrow + withdraw)
+## Phase 1 — MVP
 
-### Phase 2
+### Creator Platform
 
-- Email verification + KYC workflow
-- Advanced analytics
-- Multi-asset campaign support
-- Dispute handling
-- Social login (GitHub/Twitter/Discord)
+* User registration
+* Wallet authentication
+* Artist profiles
+* Portfolio showcase
+* Artwork listings
+* Client discovery
 
-### Phase 3
+### Marketplace
 
-- Automated payout schedules
-- Community governance
-- Cross-border NGO support
-- Trust badges & identity verification
+* Purchase digital artwork
+* Stellar payments
+* Basic commission requests
 
-### Phase 4
+### Smart Contracts
 
-- AI-driven fraud scoring
-- Multi-chain campaign expansion
-- Ecosystem grant program
+* Escrow contracts
+* Artist payouts
+* Platform fees
 
+---
+
+## Phase 2 — Professional Marketplace
+
+* Messaging system
+* Reviews & ratings
+* Milestone-based projects
+* Team collaboration
+* Advanced search & filtering
+* Artist verification badges
+
+---
+
+## Phase 3 — Creative Economy
+
+* Talent recruitment portal
+* Creative agencies support
+* Subscription memberships
+* Community competitions
+* Creator grants
+* Portfolio analytics
+
+---
+
+## Phase 4 — Ecosystem Expansion
+
+* NFT ownership certificates
+* Creative licensing marketplace
+* DAO governance
+* AI-powered talent matching
+* Cross-chain integrations
+* Ecosystem funding programs
+
+---
 
 # 🤝 Contributing
-StellarAid is fully open-source and welcomes contributions from:
 
-- Blockchain engineers
-- Rust/Soroban developers
-- Full-stack devs
-- Designers & documentation writers
-- Community moderators
+Lumora is fully open source and welcomes contributions from:
 
-See CONTRIBUTING.md for contribution workflow, code style, and development setup.
+* Stellar developers
+* Soroban smart contract engineers
+* Backend developers
+* Frontend developers
+* UI/UX designers
+* Product designers
+* Technical writers
+* Community moderators
+* Artists and creative professionals
+
+Please see:
+
+```bash
+CONTRIBUTING.md
+```
+
+for development guidelines, contribution workflow, and code standards.
+
+---
+
+# 🌍 Vision
+
+Our vision is to become the leading decentralized creative economy platform where artists and clients connect without borders, enabling global collaboration, transparent payments, and equal opportunities for creative professionals everywhere.
+
+---
 
 # 📜 License
-StellarAid is released under the MIT License, allowing free use, modification, and distribution with attribution.
 
-# 🌐 Join the StellarAid Journey
-Together, we can expand access to transparent, borderless fundraising — empowering communities and creators worldwide.
+Lumora is released under the MIT License, allowing free use, modification, and distribution with attribution.
+
+---
+
+# 🌟 Join the Lumora Journey
+
+We're building the future of creative work on Stellar.
+
+Whether you're an artist, designer, developer, entrepreneur, or supporter of the creator economy, there's a place for you in Lumora.
+
+### Create. Connect. Earn.
